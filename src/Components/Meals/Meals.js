@@ -2,7 +2,7 @@ import { Fragment } from 'react';
 import AvailableMeals from './AvailableMeals';
 import MealsSummary from './MealsSummery';
 
-const Meals = props => {
+const Meals = () => {
   return (
     <Fragment>
       <MealsSummary />
