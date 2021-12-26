@@ -30,7 +30,9 @@ const DUMMY_MEALS = [
 ];
 
 const AvailableMeals = () => {
-  const mealsList = DUMMY_MEALS.map(meal => <MealItem meals={meal} />);
+  const mealsList = DUMMY_MEALS.map(meal => (
+    <MealItem key={Math.random() * 1000} meals={meal} />
+  ));
 
   return (
     <section className={classes.meals}>
