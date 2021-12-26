@@ -31,7 +31,7 @@ const DUMMY_MEALS = [
 
 const AvailableMeals = () => {
   const mealsList = DUMMY_MEALS.map(meal => (
-    <MealItem key={Math.random() * 1000} meals={meal} />
+    <MealItem key={meal.id} meals={meal} />
   ));
 
   return (
